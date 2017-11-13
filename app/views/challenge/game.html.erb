@@ -1,0 +1,14 @@
+<form>
+  <label for="game">Enter a number to generate a new grid with the number's size</label>
+  <input type="number" id="game" name="grid_size" placeholder="enter a number?">
+  <input type="submit" value="Go on!">
+</form>
+
+<%= @grid %>
+
+<form action="/score">
+  <label for="score">What's your best shot?</label>
+  <input type="text" id="score" name="grid_guess" placeholder="enter a word?">
+<!--   <input type="hidden" name="grid" value="<%= @grid %>" > --> <!-- not required because use of session -->
+ -->  <input type="submit" value="Get Score!">
+</form>
